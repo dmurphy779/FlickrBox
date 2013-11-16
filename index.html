@@ -1,0 +1,54 @@
+<html> 
+<head> 
+<title>Flick Test</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script> 
+<script src="js/lightbox-2.6.min.js"></script>
+<script src="js/flickrbox.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<body>
+
+	<script type="text/javascript">
+		$(document).ready(function() {		
+
+			$('#how-dog-runs').flickrBox({
+				apiKey: '403e03feaf4819a91a02f158a0504075',
+				photosetID: '72157637557971086'    
+			});
+
+			$('#woman-importance').flickrBox({
+				apiKey: '403e03feaf4819a91a02f158a0504075',
+				photosetID: '72157633145216392'        
+			});
+		
+			$('#measure-for-measure').flickrBox({
+				apiKey: '403e03feaf4819a91a02f158a0504075',
+				photosetID: '72157635472303800'        
+			});
+
+			$('#somethings-afoot').flickrBox({
+				apiKey: '403e03feaf4819a91a02f158a0504075',
+				photosetID: '72157632414026721'        
+			});
+
+		});
+	 </script> 
+
+	<div id="how-dog-runs" class="flickr-set clearfix"> 
+		<button>View Photo Set</button>
+	</div>
+
+	<div id="woman-importance" class="flickr-set clearfix"> 
+		<button>View Photo Set</button>   
+	</div>
+
+	<div id="measure-for-measure" class="flickr-set clearfix"> 
+		<button>View Photo Set</button>   
+	</div>
+
+	<div id="somethings-afoot" class="flickr-set clearfix"> 
+		<button>View Photo Set</button>   
+	</div>
+
+</body> 
+</html>
