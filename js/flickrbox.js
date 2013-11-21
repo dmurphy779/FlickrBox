@@ -60,3 +60,13 @@
 			});	
     };
 })(jQuery);
+
+$(document).ready(function() {	
+  $('.flickrbox').each(function() {
+    $(this).append('<button>View Photo Set</button>');
+    $(this).flickrBox({
+      apiKey: $(this).attr('data-flickrapi'),
+      photosetID: $(this).attr('data-setid')
+    });
+  });
+});
