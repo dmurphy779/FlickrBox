@@ -1,7 +1,7 @@
 (function($){
     $.fn.flickrBox = function(callerSettings) { 
         var settings = $.extend(callerSettings);  
-        var url = 'http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=';
+        var url = 'https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=';
         url += settings.apiKey;
         url += '&photoset_id=';
         url += settings.photosetID;
